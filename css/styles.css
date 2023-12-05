@@ -55,13 +55,13 @@ nav a:hover {
 /* center aligned text in section, some padding for breathing room */
 section {
   text-align: center;
-  padding: 40px;
+  padding: 35px;
 }
 
 /* footer sticks to the bottom, always in view */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 1px;
   background-color: #3A3CA3;
   position: fixed;
   bottom: 0;
