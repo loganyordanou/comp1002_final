@@ -52,6 +52,10 @@ nav a:hover {
   color: #3A3CA3; /* hover color */
 }
 
+.active {
+ color:#3A3CA3
+}
+
 /* center aligned text in section, some padding for breathing room */
 section {
   text-align: center;
