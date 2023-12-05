@@ -47,7 +47,7 @@ nav a {
   transition: color 0.3s ease; /* smooth color change on hover */
 }
 
-/* change link color on hover for that interactive feel */
+/* change link color on hover */
 nav a:hover {
   color: #3A3CA3; /* hover color */
 }
