@@ -47,21 +47,25 @@ nav a {
   transition: color 0.3s ease; /* smooth color change on hover */
 }
 
-/* change link color on hover for that interactive feel */
+/* change link color on hover */
 nav a:hover {
   color: #3A3CA3; /* hover color */
+}
+
+.active {
+ color:#3A3CA3
 }
 
 /* center aligned text in section, some padding for breathing room */
 section {
   text-align: center;
-  padding: 40px;
+  padding: 35px;
 }
 
 /* footer sticks to the bottom, always in view */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 1px;
   background-color: #3A3CA3;
   position: fixed;
   bottom: 0;
