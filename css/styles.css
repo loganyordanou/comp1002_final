@@ -1,47 +1,76 @@
+/* basic setup - going for minimalist kinda vibe with arial, black background, and white text */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #000;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #3A3CA3;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav {
-    background-color: #333;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* header in gameboy blue */
+header {
+  background-color: #3A3CA3;
+  padding: 20px;
+  text-align: center;
+}
+
+/* dark navbar so the gameboy blue doesnt clash with the white of the text */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center; /* centering stuff because why not */
+}
+
+/* no list styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* flexbox */
+}
+
+/* nav items spaced out */
+nav li {
+  margin: 0 10px; /* adjusting spacing */
+}
+
+/* links without underlines, and in white because it pops on the dark background */
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px; /* more clickable area */
+  transition: color 0.3s ease; /* smooth color change on hover */
+}
+
+/* change link color on hover for that interactive feel */
+nav a:hover {
+  color: #3A3CA3; /* hover color */
+}
+
+/* center aligned text in section, some padding for breathing room */
+section {
+  text-align: center;
+  padding: 40px;
+}
+
+/* footer sticks to the bottom, always in view */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #3A3CA3;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* media query for smaller screens - stack nav items when it gets too cramped */
+@media (max-width: 600px) {
   nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    flex-direction: column; /* stack 'em up */
+    align-items: center;
   }
-  
+
   nav li {
-    display: inline;
-    margin-right: 20px;
+    margin-bottom: 10px; /* space out stacked items */
   }
-  
-  nav a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  section {
-    text-align: center;
-    padding: 40px;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #3A3CA3;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+}
